@@ -95,3 +95,5 @@
 ## January 24 {-}
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">If we need to bind multiple dataframes by rows, we may first wish to check if this can be done successfully.<br><br>The {compare_df_cols} function from {janitor} 📦 provides a summary of data types to check this! 🍎🍏<a href="https://t.co/88zYQFdIWa">https://t.co/88zYQFdIWa</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/kSCLESOBP9">pic.twitter.com/kSCLESOBP9</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1485464161471823872?ref_src=twsrc%5Etfw">January 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+

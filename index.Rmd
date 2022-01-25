@@ -15,12 +15,17 @@ description: |
 
 # About {-}
 
-A book that collects (and provides an easy way to access and search) tweets from *R Function A Day* [account](https://twitter.com/rfunctionaday) that I created and maintained as a hobby project for 1 year (from 24.01.2021 to 24.01.2022).
+A book that collects (and provides an easy way to access and search) tweets from *R Function A Day* [account](https://twitter.com/rfunctionaday) that I created and maintained as a hobby project for 1 year (from **24.01.2021** to **24.01.2022**).
 
 ---
 
 <p align="center"> ⚠️⚠️  <b>Note Before</b>  ⚠️⚠️ </p>
 
 Since the tweets are embedded, the web browser will be slow to load them. So please be patient.
+Apologies for these performance issues.
 
 ---
+
+There are 365 posts^[Actually, there are 366 posts to be exact. But I accidentally wrote about one function on two separate occasion, so I count them as one post. It's a fun game to find which one 😉] in this book, one for each day. 
+
+If you find that the embedded tweet is assigned to wrong date in the book, or if you wish to add something or change something about the book layout, please file an [issue on GitHub](https://github.com/IndrajeetPatil/R-Function-A-Day-book/issues).

@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>January 2021 | R Function A Day</title>
 <meta name="author" content="Indrajeet Patil">
-<meta name="description" content="January 1  January 2  January 3  January 4  January 5  January 6  January 7  January 8  January 9  January 10  January 11  January 12  January 13  January 14  January 15  January 16  January 17 ...">
+<meta name="description" content="January 24  Use {tabyl} function from {janitor} to quickly prepare a frequency table 👌Additionally, you can also use {adorn_} functions to make the printing even prettier!#RStats #DataScience...">
 <meta name="generator" content="bookdown 0.24.4 with bs4_book()">
 <meta property="og:title" content="January 2021 | R Function A Day">
 <meta property="og:type" content="book">
-<meta property="og:description" content="January 1  January 2  January 3  January 4  January 5  January 6  January 7  January 8  January 9  January 10  January 11  January 12  January 13  January 14  January 15  January 16  January 17 ...">
+<meta property="og:description" content="January 24  Use {tabyl} function from {janitor} to quickly prepare a frequency table 👌Additionally, you can also use {adorn_} functions to make the printing even prettier!#RStats #DataScience...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="January 2021 | R Function A Day">
-<meta name="twitter:description" content="January 1  January 2  January 3  January 4  January 5  January 6  January 7  January 8  January 9  January 10  January 11  January 12  January 13  January 14  January 15  January 16  January 17 ...">
+<meta name="twitter:description" content="January 24  Use {tabyl} function from {janitor} to quickly prepare a frequency table 👌Additionally, you can also use {adorn_} functions to make the printing even prettier!#RStats #DataScience...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11.6/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -53,6 +53,7 @@
 <li><a class="" href="november-2021.html">November 2021</a></li>
 <li><a class="" href="december-2021.html">December 2021</a></li>
 <li><a class="" href="january-2022.html">January 2022</a></li>
+<li><a class="" href="retirement.html">Retirement</a></li>
 </ul>
 
         <div class="book-extra">
@@ -63,130 +64,93 @@
   </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="january-2021" class="section level1 unnumbered">
 <h1>January 2021<a class="anchor" aria-label="anchor" href="#january-2021"><i class="fas fa-link"></i></a>
 </h1>
-<div id="january-1" class="section level2 unnumbered">
-<h2>January 1<a class="anchor" aria-label="anchor" href="#january-1"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-2" class="section level2 unnumbered">
-<h2>January 2<a class="anchor" aria-label="anchor" href="#january-2"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-3" class="section level2 unnumbered">
-<h2>January 3<a class="anchor" aria-label="anchor" href="#january-3"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-4" class="section level2 unnumbered">
-<h2>January 4<a class="anchor" aria-label="anchor" href="#january-4"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-5" class="section level2 unnumbered">
-<h2>January 5<a class="anchor" aria-label="anchor" href="#january-5"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-6" class="section level2 unnumbered">
-<h2>January 6<a class="anchor" aria-label="anchor" href="#january-6"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-7" class="section level2 unnumbered">
-<h2>January 7<a class="anchor" aria-label="anchor" href="#january-7"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-8" class="section level2 unnumbered">
-<h2>January 8<a class="anchor" aria-label="anchor" href="#january-8"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-9" class="section level2 unnumbered">
-<h2>January 9<a class="anchor" aria-label="anchor" href="#january-9"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-10" class="section level2 unnumbered">
-<h2>January 10<a class="anchor" aria-label="anchor" href="#january-10"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-11" class="section level2 unnumbered">
-<h2>January 11<a class="anchor" aria-label="anchor" href="#january-11"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-12" class="section level2 unnumbered">
-<h2>January 12<a class="anchor" aria-label="anchor" href="#january-12"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-13" class="section level2 unnumbered">
-<h2>January 13<a class="anchor" aria-label="anchor" href="#january-13"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-14" class="section level2 unnumbered">
-<h2>January 14<a class="anchor" aria-label="anchor" href="#january-14"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-15" class="section level2 unnumbered">
-<h2>January 15<a class="anchor" aria-label="anchor" href="#january-15"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-16" class="section level2 unnumbered">
-<h2>January 16<a class="anchor" aria-label="anchor" href="#january-16"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-17" class="section level2 unnumbered">
-<h2>January 17<a class="anchor" aria-label="anchor" href="#january-17"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-18" class="section level2 unnumbered">
-<h2>January 18<a class="anchor" aria-label="anchor" href="#january-18"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-19" class="section level2 unnumbered">
-<h2>January 19<a class="anchor" aria-label="anchor" href="#january-19"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-20" class="section level2 unnumbered">
-<h2>January 20<a class="anchor" aria-label="anchor" href="#january-20"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-21" class="section level2 unnumbered">
-<h2>January 21<a class="anchor" aria-label="anchor" href="#january-21"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-22" class="section level2 unnumbered">
-<h2>January 22<a class="anchor" aria-label="anchor" href="#january-22"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="january-23" class="section level2 unnumbered">
-<h2>January 23<a class="anchor" aria-label="anchor" href="#january-23"><i class="fas fa-link"></i></a>
-</h2>
-</div>
 <div id="january-24" class="section level2 unnumbered">
 <h2>January 24<a class="anchor" aria-label="anchor" href="#january-24"><i class="fas fa-link"></i></a>
 </h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Use {tabyl} function from {janitor} to quickly prepare a frequency table 👌<br><br>Additionally, you can also use {adorn_} functions to make the printing even prettier!<a href="https://twitter.com/hashtag/RStats?src=hash&amp;ref_src=twsrc%5Etfw">#RStats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/3BbKO83CSE">pic.twitter.com/3BbKO83CSE</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1353254143880781825?ref_src=twsrc%5Etfw">January 24, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <div id="january-25" class="section level2 unnumbered">
 <h2>January 25<a class="anchor" aria-label="anchor" href="#january-25"><i class="fas fa-link"></i></a>
 </h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Often you might want to make a new column as a combination of a few other columns in a dataframe and {tidyr::unite} is exactly what you are looking for! 🪄 <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/BeNs5nXz0T">pic.twitter.com/BeNs5nXz0T</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1353603346163257345?ref_src=twsrc%5Etfw">January 25, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <div id="january-26" class="section level2 unnumbered">
 <h2>January 26<a class="anchor" aria-label="anchor" href="#january-26"><i class="fas fa-link"></i></a>
 </h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Use the powerful parser functions from {readr} to parse a vector into the expected type 🗂<br><br>Helpful with messy, user-entered data where these functions can make educated guesses about what the input was supposed to be.<a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/5MGHmEM9Pu">pic.twitter.com/5MGHmEM9Pu</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1353961064568913920?ref_src=twsrc%5Etfw">January 26, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <div id="january-27" class="section level2 unnumbered">
 <h2>January 27<a class="anchor" aria-label="anchor" href="#january-27"><i class="fas fa-link"></i></a>
 </h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+The {model_performance} function from {performance} 📦 is a quick way to get detailed regression model summary indices for a huge no. of models! 📝<a href="https://t.co/vMpMVbz0x5">https://t.co/vMpMVbz0x5</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/VzPRICbIAg">pic.twitter.com/VzPRICbIAg</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1354313455701028864?ref_src=twsrc%5Etfw">January 27, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <div id="january-28" class="section level2 unnumbered">
 <h2>January 28<a class="anchor" aria-label="anchor" href="#january-28"><i class="fas fa-link"></i></a>
 </h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Tibbles are modern data frames and are ubiquitous in the {tidyverse}. But what if you want to build a tibble from scratch?<br><br>The {tribble} function provides an intuitive row-by-row syntax to do so! 🧱👷<a href="https://t.co/UBRRJLyM47">https://t.co/UBRRJLyM47</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/X8KlYkRCTF">pic.twitter.com/X8KlYkRCTF</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1354693321776648192?ref_src=twsrc%5Etfw">January 28, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <div id="january-29" class="section level2 unnumbered">
 <h2>January 29<a class="anchor" aria-label="anchor" href="#january-29"><i class="fas fa-link"></i></a>
 </h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Some functions may remove {NA}s in the data by default when one wishes to retain them.<br><br>{replace_na} from {tidyr} can help here by replacing {NA}s with a specified value 🕵️‍♀️<a href="https://t.co/y4Of3tcexf">https://t.co/y4Of3tcexf</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/XIodtKU7Xn">pic.twitter.com/XIodtKU7Xn</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1355049456224317441?ref_src=twsrc%5Etfw">January 29, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <div id="january-30" class="section level2 unnumbered">
 <h2>January 30<a class="anchor" aria-label="anchor" href="#january-30"><i class="fas fa-link"></i></a>
 </h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+If you are feeling a bit ambitious and want to understand what is the abstract syntactic structure of your R code, you can use the {ast} function from {lobstr} package to draw a tree representation! 🦞 <a href="https://t.co/WbyECG3a4H">https://t.co/WbyECG3a4H</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/datascience?src=hash&amp;ref_src=twsrc%5Etfw">#datascience</a> <a href="https://t.co/cgMZDz1vz1">pic.twitter.com/cgMZDz1vz1</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1355411209022038016?ref_src=twsrc%5Etfw">January 30, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <div id="january-31" class="section level2 unnumbered">
 <h2>January 31<a class="anchor" aria-label="anchor" href="#january-31"><i class="fas fa-link"></i></a>
 </h2>
-
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+"All work and no play makes Jack a dull boy"<br>So it's important to also have a little fun as part of your <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> workflows. <br><br>To that end, you can use {say} function from {cowsay}! 🐮 💬 <a href="https://t.co/SmDKtEHbMC">https://t.co/SmDKtEHbMC</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/8AROLW8r3d">pic.twitter.com/8AROLW8r3d</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1355782785546543104?ref_src=twsrc%5Etfw">January 31, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 </div>
   <div class="chapter-nav">
@@ -196,29 +160,6 @@
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#january-2021">January 2021</a></li>
-<li><a class="nav-link" href="#january-1">January 1</a></li>
-<li><a class="nav-link" href="#january-2">January 2</a></li>
-<li><a class="nav-link" href="#january-3">January 3</a></li>
-<li><a class="nav-link" href="#january-4">January 4</a></li>
-<li><a class="nav-link" href="#january-5">January 5</a></li>
-<li><a class="nav-link" href="#january-6">January 6</a></li>
-<li><a class="nav-link" href="#january-7">January 7</a></li>
-<li><a class="nav-link" href="#january-8">January 8</a></li>
-<li><a class="nav-link" href="#january-9">January 9</a></li>
-<li><a class="nav-link" href="#january-10">January 10</a></li>
-<li><a class="nav-link" href="#january-11">January 11</a></li>
-<li><a class="nav-link" href="#january-12">January 12</a></li>
-<li><a class="nav-link" href="#january-13">January 13</a></li>
-<li><a class="nav-link" href="#january-14">January 14</a></li>
-<li><a class="nav-link" href="#january-15">January 15</a></li>
-<li><a class="nav-link" href="#january-16">January 16</a></li>
-<li><a class="nav-link" href="#january-17">January 17</a></li>
-<li><a class="nav-link" href="#january-18">January 18</a></li>
-<li><a class="nav-link" href="#january-19">January 19</a></li>
-<li><a class="nav-link" href="#january-20">January 20</a></li>
-<li><a class="nav-link" href="#january-21">January 21</a></li>
-<li><a class="nav-link" href="#january-22">January 22</a></li>
-<li><a class="nav-link" href="#january-23">January 23</a></li>
 <li><a class="nav-link" href="#january-24">January 24</a></li>
 <li><a class="nav-link" href="#january-25">January 25</a></li>
 <li><a class="nav-link" href="#january-26">January 26</a></li>
