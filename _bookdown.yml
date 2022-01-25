@@ -10,7 +10,7 @@ rmd_files:
     #"March-2021.Rmd",
     #"April-2021.Rmd",
     #"May-2021.Rmd",
-    #"June-2021.Rmd",
+    "June-2021.Rmd",
     "July-2021.Rmd",
     "August-2021.Rmd",
     "September-2021.Rmd",
