@@ -1,5 +1,9 @@
 # January 2022 {-}
 
+## January 22 {-}
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Visualizing data along an Archimedean spiral can efficiently reveal periodic patterns in time series data.<br><br>The {spiral_*} function family from {spiralize} 📦 draws such spiral plots flexibly! 🌀<a href="https://t.co/5vybsvWv2e">https://t.co/5vybsvWv2e</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/c168IWhcXL">pic.twitter.com/c168IWhcXL</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1484745033287081984?ref_src=twsrc%5Etfw">January 22, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## January 23 {-}
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">While working in a piped workflow, if you need to extract a single column, the syntax to do so can be a bit cumbersome.<br><br>The {pull} function from {dplyr} 📦 provides a more readable syntax to this end! 💄<a href="https://t.co/rCT1vcMZzX">https://t.co/rCT1vcMZzX</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/vEs2cc7Lw8">pic.twitter.com/vEs2cc7Lw8</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1485112286864109574?ref_src=twsrc%5Etfw">January 23, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
