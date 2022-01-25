@@ -2,120 +2,120 @@
 
 ## September 1 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sometimes we may wish to estimate density for priors and posteriors of a regression model.<br><br>The {estimate_density} function from {bayestestR} 📦 computes and visualizes these estimates 🧮<a href="https://t.co/gm8Wf9qr3f">https://t.co/gm8Wf9qr3f</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/SjuoAiuXPo">pic.twitter.com/SjuoAiuXPo</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1432949451115712518?ref_src=twsrc%5Etfw">September 1, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 2 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you use {dplyr} and {tidyr} 📦s to wrangle data, you may wish to see some feedback about what different operations did, especially in long piped chains.<br><br>The {tidylog} 📦 functions do exactly this 📝<a href="https://t.co/MfpoUZoBRQ">https://t.co/MfpoUZoBRQ</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/hOnonyFHzx">pic.twitter.com/hOnonyFHzx</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1433298963885699072?ref_src=twsrc%5Etfw">September 2, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 3 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A cheatsheet is a helpful resource to have at hand while learning a new R package.<br><br>The {get_all_cheatsheets} function from {cheatsheet} 📦 makes it convenient to download all available cheatsheets on your computer in one go! 🙌<a href="https://t.co/CxW1EOoaLK">https://t.co/CxW1EOoaLK</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/CXkPpPWZ5d">pic.twitter.com/CXkPpPWZ5d</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1433654942666039296?ref_src=twsrc%5Etfw">September 3, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 4 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sometimes you may wish to display a collection of images in a {ggplot2} graph.<br><br>The {geom_point_img} function from {ggimg} 📦 provides just the needed geometric layer! 📷<a href="https://t.co/YinETxrQdk">https://t.co/YinETxrQdk</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/rhB2jwgsZe">pic.twitter.com/rhB2jwgsZe</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1434022164731158534?ref_src=twsrc%5Etfw">September 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 5 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sometimes you may wish to execute a computation in a clean new R process without affecting other R processes.<br><br>The {r} function from {callr} 📦 does exactly this! ✏️<a href="https://t.co/CXYdyo3d1P">https://t.co/CXYdyo3d1P</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/2cBDDRC2nj">pic.twitter.com/2cBDDRC2nj</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1434390477843881984?ref_src=twsrc%5Etfw">September 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 6 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cox regression model is widely used in medical research to assess the effect of several risk factors on survival time of patients.<br><br>The {ggcoxdiagnostics} function from {survminer} 📦 can help visually assess goodness of model fit 🧐<a href="https://t.co/BzVW6ReYFm">https://t.co/BzVW6ReYFm</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/3z6D7FQgL9">pic.twitter.com/3z6D7FQgL9</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1434750997352652804?ref_src=twsrc%5Etfw">September 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 7 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sometimes we may need to do high-quality conversion of pdf page(s) to image (png, jpeg, etc.) format.<br><br>The {pdf_convert} function from {pdftools} 📦 provides the needed functionality 🔀<a href="https://t.co/DgielR9zoQ">https://t.co/DgielR9zoQ</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/bHKPNcnPLQ">pic.twitter.com/bHKPNcnPLQ</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1435106442726592513?ref_src=twsrc%5Etfw">September 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 8 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sometimes you may want to plot different probability distributions with parameters of interest.<br><br>The {ggdistribution} function from {ggfortify} 📦 provides a convenient helper to do so! 🔔<a href="https://t.co/8ue1b7Drh2">https://t.co/8ue1b7Drh2</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/aOHHeMT5KT">pic.twitter.com/aOHHeMT5KT</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1435477648281571331?ref_src=twsrc%5Etfw">September 8, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 9 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sometimes we need to perform both addition and subtraction of a quantity (e.g. while computing confidence intervals of an estimate).<br><br>The plus-minus operator (%+-%) from {dipsaus} 📦 can do this conveniently for various data types 🧮<a href="https://t.co/1Ia5zzsM9L">https://t.co/1Ia5zzsM9L</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/JimL38L0Sl">pic.twitter.com/JimL38L0Sl</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1435839069062373376?ref_src=twsrc%5Etfw">September 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 10 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">While visualizing group differences, sometimes you may also wish to include some additional descriptive statistics in the plot itself.<br><br>The {ggsummarystats} function from {ggpubr} 📦 provides a flexible way to do so! 📊<a href="https://t.co/DMzyXViicx">https://t.co/DMzyXViicx</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/lIrBWo1Gmz">pic.twitter.com/lIrBWo1Gmz</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1436197284748972035?ref_src=twsrc%5Etfw">September 10, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 11 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">{purrr} 📦’s {map} and {map2} function families can apply a single- or two-argument functions to a list. But what if you want to apply a function with multiple arguments?<br><br>The {pmap_} function family addresses exactly this problem 🙌<a href="https://t.co/FrCzOUFLtJ">https://t.co/FrCzOUFLtJ</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/oSQRgS4ywS">pic.twitter.com/oSQRgS4ywS</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1436556343368896520?ref_src=twsrc%5Etfw">September 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 12 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Euler diagram, a way to visualize set relationships, is a generalization of Venn diagram since it relaxes the requirement that all set interactions be present.<br><br>The {euler} function from {eulerr} 📦 easily produces these diagrams 🖇<a href="https://t.co/7eM2ZqEeVG">https://t.co/7eM2ZqEeVG</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/aEBXBdIdt2">pic.twitter.com/aEBXBdIdt2</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1436925643242024963?ref_src=twsrc%5Etfw">September 12, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 13 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">While exploring data, one often needs a quick and easy way to create dot-and-whisker plots of coefficient estimates for regression models.<br><br>The {ggcoef_model} function from {GGally} 📦 produces such plots with elegant defaults 🤩<a href="https://t.co/atW3RTPWEH">https://t.co/atW3RTPWEH</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/j0Zj2fp50Q">pic.twitter.com/j0Zj2fp50Q</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1437299060436869120?ref_src=twsrc%5Etfw">September 13, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 14 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sometimes you may wish to take a snapshot of a webpage, an rmarkdown document, or a Shiny application from R itself.<br><br>The {*shot} function family from {webshot} 📦 provides a convenient way to do so! 📸<a href="https://t.co/SR0NPM36Xl">https://t.co/SR0NPM36Xl</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/2IvYDAB3yo">pic.twitter.com/2IvYDAB3yo</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1437651535173914630?ref_src=twsrc%5Etfw">September 14, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 15 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you use both R and python, sometimes you may wish to convert your Jupyter notebooks so that you can modify them further with {rmarkdown}.<br><br>The {convert_ipynb} function from {rmarkdown} 📦 can do this conversion 🔄<a href="https://t.co/6pnduEMAZg">https://t.co/6pnduEMAZg</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/IxtlF0faKc">pic.twitter.com/IxtlF0faKc</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1438001542414675974?ref_src=twsrc%5Etfw">September 15, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 16 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dropbox is a popular file hosting service and we may sometimes wish to interact with this application from the comfort of R itself.<br><br>The {drop_*} function family from {rdrop2} 📦 provides just the toolbox! 🧰 <a href="https://t.co/THtnR1fqB2">https://t.co/THtnR1fqB2</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/AfrKlSlKCB">pic.twitter.com/AfrKlSlKCB</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1438374501272653827?ref_src=twsrc%5Etfw">September 16, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 17 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sometimes we may need to standardize (z-score) data, i.e. express it in terms of standard deviation.<br><br>The {standardize} function from {datawizard} 📦 easily computes them, and provides further customizations (e.g. robust variant)! 🙌<a href="https://t.co/yavQlVXuey">https://t.co/yavQlVXuey</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/mNeyfbohSg">pic.twitter.com/mNeyfbohSg</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1438706382409289730?ref_src=twsrc%5Etfw">September 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 18 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Slope graphs are a handy tool for visualizing trends in paired data with multiple observations.<br><br>The {newggslopegraph} function from {CGPfunctions} 📦 provides a helper to quickly prepare such a graph! 📈<a href="https://t.co/Rw9BmRpPPc">https://t.co/Rw9BmRpPPc</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/XCO6SOocTa">pic.twitter.com/XCO6SOocTa</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1439088446203699203?ref_src=twsrc%5Etfw">September 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 19 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Compiling LaTeX to PDF can be troublesome; often due to missing LaTeX packages. We may wish that such packages are automatically installed, making compilation painless.<br><br>The {pdflatex} function from {tinytex} 📦 does exactly this! 👏<a href="https://t.co/4Ga94fTm47">https://t.co/4Ga94fTm47</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/JX6o9YAi1d">pic.twitter.com/JX6o9YAi1d</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1439450859289694209?ref_src=twsrc%5Etfw">September 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 20 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Like in SQL, we may sometimes wish to change rows in one dataset based on rows in another dataset.<br><br>The {rows_} function family in {dplyr} 📦 provides this functionality! 🖇<a href="https://t.co/uSpmlee90H">https://t.co/uSpmlee90H</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/mLTwGqKMvD">pic.twitter.com/mLTwGqKMvD</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1439832252750475264?ref_src=twsrc%5Etfw">September 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 21 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">While visualizing distributions, boxplots can hide bimodality &amp; violins can show non-existent data.<br><br>Sina plots, where points are jittered proportional to density, provide a good solution &amp; {ggforce::geom_sina} supplies the layer! 👏<a href="https://t.co/BR5iiCcf6s">https://t.co/BR5iiCcf6s</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/IrYGYqXUtt">pic.twitter.com/IrYGYqXUtt</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1440186155652169730?ref_src=twsrc%5Etfw">September 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 22 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The coefficient of determination (R^2) provides an absolute goodness-of-fit index for a regression model and is used to assess performance.<br><br>The {r2} function from {performance} 📦 computes it for a variety of regression models! 🧮<a href="https://t.co/y3qQQOXuRv">https://t.co/y3qQQOXuRv</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/pJCrx4MOP4">pic.twitter.com/pJCrx4MOP4</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1440542830280146956?ref_src=twsrc%5Etfw">September 22, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 23 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A common issue with watching movies with subtitle files is that they can be out of sync with each other.<br><br>The {srt_shift} function from {srt} 📦 can help shift the dialogues to sync with video and write a new subtitle file! 🎥🍿<a href="https://t.co/j5V6SnCfZ7">https://t.co/j5V6SnCfZ7</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/JE234uj5e7">pic.twitter.com/JE234uj5e7</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1440887182533791746?ref_src=twsrc%5Etfw">September 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 24 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hash tables can efficiently look up values irrespective of the size of the table.<br><br>The {hash} function from the eponymous 📦 provides a hash-like data structure and the necessary methods for hash operations in native R style! 🔎<a href="https://t.co/QrxzzANqFV">https://t.co/QrxzzANqFV</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/b75HRHxS1m">pic.twitter.com/b75HRHxS1m</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1441275339485941760?ref_src=twsrc%5Etfw">September 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 25 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The sunset funnel plot includes study-level power info and acts as a diagnostic tool in meta-analysis to examine the power studies had to detect an effect of interest.<br><br>The {metaviz::viz_sunset} function can easily create them! 🌅 <a href="https://t.co/cqlXpmUh0f">https://t.co/cqlXpmUh0f</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/lf1Pefk5XH">pic.twitter.com/lf1Pefk5XH</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1441608259790639106?ref_src=twsrc%5Etfw">September 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 26 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Although visualizing variable distribution via boxplot is easy, we may wish to avoid redundant vertical mirroring of the distribution.<br><br>The {geom_half_boxplot} function from {gghalves} 📦 provides exactly such a geometric layer! 🙌<a href="https://t.co/0kfnVPtUWU">https://t.co/0kfnVPtUWU</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/2KqVyhOPIA">pic.twitter.com/2KqVyhOPIA</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1442020298333855746?ref_src=twsrc%5Etfw">September 26, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 27 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Item analysis, a psychometric technique, selects few items (from a large pool) to index a psychological construct.<br><br>The {tab_itemscale} function from {sjPlot} 📦 carries out and produces elegant HTML tables for item analysis 🧽<a href="https://t.co/8Z5DzerVaU">https://t.co/8Z5DzerVaU</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/uIXZrVsr0Z">pic.twitter.com/uIXZrVsr0Z</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1442361826054975488?ref_src=twsrc%5Etfw">September 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 28 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">XML language is ubiquitous in storing and transporting a wide array of data structures and sometimes we may wish to work with it in R.<br><br>The {as_list} function from {xml2} 📦 converts XML document nodes to a familiar R list! 🔀<a href="https://t.co/OqvPGvv1Ce">https://t.co/OqvPGvv1Ce</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/fddfsNc0z5">pic.twitter.com/fddfsNc0z5</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1442727350408466432?ref_src=twsrc%5Etfw">September 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 29 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Even if you know markdown syntax well, sometimes you may wish to generate it algorithmically.<br><br>The {md_} function family from {gluedown} 📦 can be of help here 🤖<a href="https://t.co/VXXO0Ce3Mu">https://t.co/VXXO0Ce3Mu</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/EklzKUpHkB">pic.twitter.com/EklzKUpHkB</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1443099601473576960?ref_src=twsrc%5Etfw">September 29, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## September 30 {-}
 
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Out of curiosity or while working in a memory-constrained setting, sometimes you may wish to know roughly how much memory is being used by R.<br><br>The {mem_used} function from {lobstr} 📦 provides such an estimate 📀<a href="https://t.co/SwebVXHUrx">https://t.co/SwebVXHUrx</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/SbEWyUZdPl">pic.twitter.com/SbEWyUZdPl</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1443448599736639488?ref_src=twsrc%5Etfw">September 30, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
