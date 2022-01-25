@@ -5,8 +5,8 @@ delete_merged_file: true
 rmd_files:
   [
     "index.Rmd",
-    #"January-2021.Rmd",
-    #"February-2021.Rmd",
+    "January-2021.Rmd",
+    "February-2021.Rmd",
     "March-2021.Rmd",
     "April-2021.Rmd",
     "May-2021.Rmd",
