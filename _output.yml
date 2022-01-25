@@ -2,11 +2,11 @@ bookdown::bs4_book:
   css: style.css
   theme:
     primary: "#096B72"
-  repo: https://github.com/IndrajeetPatil/R-Function-A-Day-posts/
+  repo: https://github.com/IndrajeetPatil/R-Function-A-Day-book/
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
-  citation_package: natbib
+  #citation_package: natbib # nothing to cite
   keep_tex: yes
 bookdown::epub_book: default

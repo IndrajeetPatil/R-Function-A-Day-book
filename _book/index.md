@@ -4,15 +4,15 @@ author: "Indrajeet Patil"
 date: "2022-01-25"
 site: bookdown::bookdown_site
 documentclass: book
-#bibliography: [book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  A collection of tweets from "R Function A Day" account that I ran as a hobby project from 24.01.2021 to 24.01.2022.
-#biblio-style: apalike
-#csl: chicago-fullnote-bibliography.csl
+  A book that collects (and provides an easy way to access and search) tweets from *R Function A Day* account that I ran as a hobby project for 1 year (from 24.01.2021 to 24.01.2022).
+# bibliography: [book.bib, packages.bib] # no references
+# biblio-style: apalike # no references
+# csl: chicago-fullnote-bibliography.csl # no references
 ---
 
 # About {-}
 
-This book collects (and provides an easy way to access and search) tweets from *R Function A Day* account that I ran as a hobby project from 24.01.2021 to 24.01.2022.
+A book that collects (and provides an easy way to access and search) tweets from *R Function A Day* account that I ran as a hobby project for 1 year (from 24.01.2021 to 24.01.2022).
