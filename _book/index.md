@@ -1,13 +1,14 @@
 --- 
 title: "R Function A Day"
 author: "Indrajeet Patil"
-date: "2022-01-25"
+date: "2022-02-02"
 site: bookdown::bookdown_site
 documentclass: book
 url: https://bookdown.org/IndrajeetPatil/R-Function-A-Day-book/
-# cover-image: path to the social sharing image like images/cover.jpg
+cover-image: "images/cover.jpg"
 description: |
-  A book that collects (and provides an easy way to access and search) tweets from *R Function A Day* [account](https://twitter.com/rfunctionaday) that I created and maintained as a hobby project for 1 year (from 24.01.2021 to 24.01.2022).
+  "A book that collects (and provides an easy way to access and search) tweets from *R Function A Day* [account](https://twitter.com/rfunctionaday) that I created and maintained as a hobby project for 1 year (from 24.01.2021 to 24.01.2022)."
+github-repo: "IndrajeetPatil/R-Function-A-Day-book"
 keywords: "CRAN, R, Book, Data Science"
 # bibliography: [book.bib, packages.bib] # no references
 # biblio-style: apalike # no references
