@@ -1,7 +1,7 @@
 --- 
 title: "R Function A Day"
-author: "Indrajeet Patil"
-date: "2022-02-02"
+author: '<a class="text-light" href="https://sites.google.com/site/indrajeetspatilmorality/">Indrajeet Patil</a>'
+date: "2022-05-25"
 site: bookdown::bookdown_site
 documentclass: book
 url: https://bookdown.org/IndrajeetPatil/R-Function-A-Day-book/

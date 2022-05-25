@@ -1,6 +1,6 @@
 --- 
 title: "R Function A Day"
-author: "Indrajeet Patil"
+author: '<a class="text-light" href="https://sites.google.com/site/indrajeetspatilmorality/">Indrajeet Patil</a>'
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
