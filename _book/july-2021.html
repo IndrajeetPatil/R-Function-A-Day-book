@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>July 2021 | R Function A Day</title>
+<meta name="author" content="Indrajeet Patil">
+<meta name="description" content="July 1  If you share code plus data, it's a good idea to adopt a few defensive techniques to ensure that the data are what the code expects.The {assert_that} function from {assertthat} 📦 provides...">
+<meta name="generator" content="bookdown 0.41 with bs4_book()">
+<meta property="og:title" content="July 2021 | R Function A Day">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://bookdown.org/IndrajeetPatil/R-Function-A-Day-book/july-2021.html">
+<meta property="og:image" content="https://bookdown.org/IndrajeetPatil/R-Function-A-Day-book/images/cover.jpg">
+<meta property="og:description" content="July 1  If you share code plus data, it's a good idea to adopt a few defensive techniques to ensure that the data are what the code expects.The {assert_that} function from {assertthat} 📦 provides...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="July 2021 | R Function A Day">
+<meta name="twitter:description" content="July 1  If you share code plus data, it's a good idea to adopt a few defensive techniques to ensure that the data are what the code expects.The {assert_that} function from {assertthat} 📦 provides...">
+<meta name="twitter:image" content="https://bookdown.org/IndrajeetPatil/R-Function-A-Day-book/images/cover.jpg">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.8.0/transition.js"></script><script src="libs/bs3compat-0.8.0/tabs.js"></script><script src="libs/bs3compat-0.8.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">R Function A Day</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">About</a></li>
+<li><a class="" href="january-2021.html">January 2021</a></li>
+<li><a class="" href="february-2021.html">February 2021</a></li>
+<li><a class="" href="march-2021.html">March 2021</a></li>
+<li><a class="" href="april-2021.html">April 2021</a></li>
+<li><a class="" href="may-2021.html">May 2021</a></li>
+<li><a class="" href="june-2021.html">June 2021</a></li>
+<li><a class="active" href="july-2021.html">July 2021</a></li>
+<li><a class="" href="august-2021.html">August 2021</a></li>
+<li><a class="" href="september-2021.html">September 2021</a></li>
+<li><a class="" href="october-2021.html">October 2021</a></li>
+<li><a class="" href="november-2021.html">November 2021</a></li>
+<li><a class="" href="december-2021.html">December 2021</a></li>
+<li><a class="" href="january-2022.html">January 2022</a></li>
+<li><a class="" href="retirement.html">Retirement</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/IndrajeetPatil/R-Function-A-Day-book/">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="july-2021" class="section level1 unnumbered">
+<h1>July 2021<a class="anchor" aria-label="anchor" href="#july-2021"><i class="fas fa-link"></i></a>
+</h1>
+<div id="july-1" class="section level2 unnumbered">
+<h2>July 1<a class="anchor" aria-label="anchor" href="#july-1"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+If you share code plus data, it's a good idea to adopt a few defensive techniques to ensure that the data are what the code expects.<br><br>The {assert_that} function from {assertthat} 📦 provides just the tool! 🥋<a href="https://t.co/kQT74S0AQX">https://t.co/kQT74S0AQX</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/ScTmUxQxnr">pic.twitter.com/ScTmUxQxnr</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1410473756737290241?ref_src=twsrc%5Etfw">July 1, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-2" class="section level2 unnumbered">
+<h2>July 2<a class="anchor" aria-label="anchor" href="#july-2"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Either for aesthetic or for highlighting purposes, you may sometimes wish to draw borders around legend keys in {ggplot2} plots. 🖼️<br><br>The {keybox} from {ggfun} 📦 does exactly this, easily and flexibly 🙌<a href="https://t.co/dBAjEqKzY2">https://t.co/dBAjEqKzY2</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/mvFxIeInyj">pic.twitter.com/mvFxIeInyj</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1410798661915877378?ref_src=twsrc%5Etfw">July 2, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-3" class="section level2 unnumbered">
+<h2>July 3<a class="anchor" aria-label="anchor" href="#july-3"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+If you don't use RMarkdown and copy-paste software output to report statistics, you'd want to check that no errors were made in the process.<br><br>The {statcheck} function from eponymous 📦 does this (for single or multiple files)! 🔍<a href="https://t.co/HdW6CKKPO8">https://t.co/HdW6CKKPO8</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/tgC5ysvz6T">pic.twitter.com/tgC5ysvz6T</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1411184461304242178?ref_src=twsrc%5Etfw">July 3, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-4" class="section level2 unnumbered">
+<h2>July 4<a class="anchor" aria-label="anchor" href="#july-4"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Correctly specifying a distribution family for regression model can improve estimate accuracy. But what if we’re unsure?<br><br>The {check_distribution} function from {performance} 📦 uses Random Forest to help you reconsider the choice ⚠️<a href="https://t.co/qD7cQvNLLz">https://t.co/qD7cQvNLLz</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/MLhkCT2cwh">pic.twitter.com/MLhkCT2cwh</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1411533069107015685?ref_src=twsrc%5Etfw">July 4, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-5" class="section level2 unnumbered">
+<h2>July 5<a class="anchor" aria-label="anchor" href="#july-5"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+While scraping web data in R, sometimes we may wish that the extracted text layout mimics its browser/HTML behavior (e.g. ignore whitespace).<br><br>The {html_text2} function from {rvest} 📦 helps with exactly this! 🙇‍♀️<a href="https://t.co/QJwe3nXx43">https://t.co/QJwe3nXx43</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/T7NU9MYKqL">pic.twitter.com/T7NU9MYKqL</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1411909503642132482?ref_src=twsrc%5Etfw">July 5, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-6" class="section level2 unnumbered">
+<h2>July 6<a class="anchor" aria-label="anchor" href="#july-6"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Simple slopes analyses can help understand interaction effects in linear regression.<br><br>The {sim_slopes} function from {interactions} 📦 provides an easy way to both run and visualize this analysis for 2-way or 3-way interactions! 🎚️<a href="https://t.co/4Xvc4FMrEr">https://t.co/4Xvc4FMrEr</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/70AFS2QQcF">pic.twitter.com/70AFS2QQcF</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1412279782956544000?ref_src=twsrc%5Etfw">July 6, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-7" class="section level2 unnumbered">
+<h2>July 7<a class="anchor" aria-label="anchor" href="#july-7"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+A histogram is a good visualization to represent the distribution of numeric data. 📊<br><br>The {gghistostats} function from {ggstatsplot} 📦 provides ready-made histograms (with additional descriptive and inferential statistics) 🍒<a href="https://t.co/zSmT4MBGjX">https://t.co/zSmT4MBGjX</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/xMFwXedQSO">pic.twitter.com/xMFwXedQSO</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1412651083256811527?ref_src=twsrc%5Etfw">July 7, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-8" class="section level2 unnumbered">
+<h2>July 8<a class="anchor" aria-label="anchor" href="#july-8"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+If you want to use non-standard fonts or characters, getting graphics devices to work with them can be a pain.<br><br>The {showtext_auto} function from {showtext} 📦 supports a large collection of font formats and graphics devices! 🙌<a href="https://t.co/bt3SzZfyhI">https://t.co/bt3SzZfyhI</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/bYmyfZEfhL">pic.twitter.com/bYmyfZEfhL</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1412985327812288513?ref_src=twsrc%5Etfw">July 8, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-9" class="section level2 unnumbered">
+<h2>July 9<a class="anchor" aria-label="anchor" href="#july-9"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Sometimes we may wish to provide descriptive labels for colors we are using, but may not know how to label them.<br><br>The {name} function from {ColorNameR} 📦 produces color labels in multiple languages and colorspaces! 🎨<a href="https://t.co/RVkqjq7Ksz">https://t.co/RVkqjq7Ksz</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/MmD1MWPHF3">pic.twitter.com/MmD1MWPHF3</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1413374670041124864?ref_src=twsrc%5Etfw">July 9, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-10" class="section level2 unnumbered">
+<h2>July 10<a class="anchor" aria-label="anchor" href="#july-10"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Sometimes we may wish to check all relevant assumptions for a regression model in one go. 🔍<br><br>The {check_model} function from {performance} 📦 does exactly this and also provides elegant visualizations with helpful pointers ✅📊<a href="https://t.co/4SIIL0u9Jn">https://t.co/4SIIL0u9Jn</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/EMmye4qAZk">pic.twitter.com/EMmye4qAZk</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1413719791114854406?ref_src=twsrc%5Etfw">July 10, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-11" class="section level2 unnumbered">
+<h2>July 11<a class="anchor" aria-label="anchor" href="#july-11"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+If you are writing manuscripts in RMarkdown, you may wish to auto-generate citations for all R packages used in the document. ✍️<br><br>The {write_bib} function from {knitr} 📦 does exactly this! 📄<a href="https://t.co/JYux01tB7h">https://t.co/JYux01tB7h</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/YvOiaPeYfY">pic.twitter.com/YvOiaPeYfY</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1414096128807784448?ref_src=twsrc%5Etfw">July 11, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-12" class="section level2 unnumbered">
+<h2>July 12<a class="anchor" aria-label="anchor" href="#july-12"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+While plotting time series data, we may wish to plot several subseries corresponding to the periods of interest (seasons, months, etc.).<br><br>The {ggfreqplot} function from {ggfortify} 📦 makes this task effortless! 📈📉 <a href="https://t.co/rRmcQbKv4U">https://t.co/rRmcQbKv4U</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/Vic17LXkM9">pic.twitter.com/Vic17LXkM9</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1414443719688851459?ref_src=twsrc%5Etfw">July 12, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-13" class="section level2 unnumbered">
+<h2>July 13<a class="anchor" aria-label="anchor" href="#july-13"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+If 📦s being used happen to have a function with an identical name, using that function <em>may</em> fail.<br><br>Aside from <code>::</code> qualifier, {conflicted_prefer} function from {conflicted} 📦 can solve this conflict by prioritizing one function 🥇<a href="https://t.co/n96Mt8kHx3">https://t.co/n96Mt8kHx3</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/V9jZwxADoM">pic.twitter.com/V9jZwxADoM</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1414814093387632644?ref_src=twsrc%5Etfw">July 13, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-14" class="section level2 unnumbered">
+<h2>July 14<a class="anchor" aria-label="anchor" href="#july-14"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Exploratory data analysis often involves specifying and comparing multiple regression models.<br><br>The {compare_parameters} function from {parameters} 📦 provides dot-and-whisker plots to display and compare regression estimates! 🥇🥈🥉<a href="https://t.co/vmuGta5W9i">https://t.co/vmuGta5W9i</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/Xyve8SMk1Q">pic.twitter.com/Xyve8SMk1Q</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1415169535481626624?ref_src=twsrc%5Etfw">July 14, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-15" class="section level2 unnumbered">
+<h2>July 15<a class="anchor" aria-label="anchor" href="#july-15"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Either computing environment or good practice recommendations may compel you to check for file paths, character encoding, etc. in your script. 🔍<br><br>The {is_} function family from {xfun} 📦 provides tools to run such checks easily ✅<a href="https://t.co/LdRTIKXOCA">https://t.co/LdRTIKXOCA</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataSciencee?src=hash&amp;ref_src=twsrc%5Etfw">#DataSciencee</a> <a href="https://t.co/YCtgZEufae">pic.twitter.com/YCtgZEufae</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1415537595132547074?ref_src=twsrc%5Etfw">July 15, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-16" class="section level2 unnumbered">
+<h2>July 16<a class="anchor" aria-label="anchor" href="#july-16"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Sometimes we may wish to assess the polarity (positive, negative, neutral) of text data.<br><br>The {sentiment} function from {sentimentr} 📦 provides a convenient and flexible way to approximate the sentiment of the text by sentence ➕➖<a href="https://t.co/mMpxUxXyVP">https://t.co/mMpxUxXyVP</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/9oXGUwVTnf">pic.twitter.com/9oXGUwVTnf</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1415887978505900039?ref_src=twsrc%5Etfw">July 16, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-17" class="section level2 unnumbered">
+<h2>July 17<a class="anchor" aria-label="anchor" href="#july-17"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+During exploratory phase, we may wish to visualize and model data quickly and thoroughly. ➿<br><br>The {ggwithinstats} function from {ggstatsplot} 📦 does this for one-way repeated measures designs via plots with statistical details 📊<a href="https://t.co/lOT7qa37z8">https://t.co/lOT7qa37z8</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/UxoUQr1cvB">pic.twitter.com/UxoUQr1cvB</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1416257348289679360?ref_src=twsrc%5Etfw">July 17, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-18" class="section level2 unnumbered">
+<h2>July 18<a class="anchor" aria-label="anchor" href="#july-18"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+To keep related data together, you might sometimes create dataframes with columns that themselves contain dataframes. 🧳<br><br>Since working with them can be a pain, the {unpack} function from {tidyr} 📦 helps you "unpack" them! 🔨<a href="https://t.co/rt0ekSiMUg">https://t.co/rt0ekSiMUg</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/m2O8OQRDgF">pic.twitter.com/m2O8OQRDgF</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1416619255798411266?ref_src=twsrc%5Etfw">July 18, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-19" class="section level2 unnumbered">
+<h2>July 19<a class="anchor" aria-label="anchor" href="#july-19"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+If you use {dplyr} 📦 for data analysis, you may sometimes wish to carry out statistical analysis on a grouped data frame.<br><br>If the statistical function requires the whole dataframe, the {cur_data} function provides just the tool! 🗄️<a href="https://t.co/IemOGQqqrH">https://t.co/IemOGQqqrH</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/MzEnBq0tp0">pic.twitter.com/MzEnBq0tp0</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1416983216049856522?ref_src=twsrc%5Etfw">July 19, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-20" class="section level2 unnumbered">
+<h2>July 20<a class="anchor" aria-label="anchor" href="#july-20"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Visualizing variable distribution via violin plot is easy in {ggplot2}, but we may wish to avoid redundant mirroring of the density plot.<br><br>The {stat_density_ridges} function from {ggridges} 📦 provides just the geometric layer! 🙌<a href="https://t.co/x6yAh0hHW9">https://t.co/x6yAh0hHW9</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/V3JhOamnFb">pic.twitter.com/V3JhOamnFb</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1417348837778329603?ref_src=twsrc%5Etfw">July 20, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-21" class="section level2 unnumbered">
+<h2>July 21<a class="anchor" aria-label="anchor" href="#july-21"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+During analysis, model selection may involve the specification of multiple models and formally testing if they are different.<br><br>The {test_performance} function from {performance} 📦 performs and summarizes indices from these tests 🥇<a href="https://t.co/Qd25p55XPq">https://t.co/Qd25p55XPq</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/EvmEOVXNRn">pic.twitter.com/EvmEOVXNRn</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1417720749452931072?ref_src=twsrc%5Etfw">July 21, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-22" class="section level2 unnumbered">
+<h2>July 22<a class="anchor" aria-label="anchor" href="#july-22"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+While visualizing data across a combination of variables, {facet_wrap} in {ggplot2} creates small multiples. But what if the variables are nested?<br><br>The {facet_nested_wrap} function from {ggh4x} 📦 handles exactly such designs! 📊🙌<a href="https://t.co/WVp154GvPA">https://t.co/WVp154GvPA</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/P6ZjOUF9eV">pic.twitter.com/P6ZjOUF9eV</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1418069470195724288?ref_src=twsrc%5Etfw">July 22, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-23" class="section level2 unnumbered">
+<h2>July 23<a class="anchor" aria-label="anchor" href="#july-23"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Sometimes you may wish to do something in R and can't think of any package that might be helpful.<br><br>In such cases, the {findPackage} function from {packagefinder} 📦 can search and return relevant CRAN packages given the keywords 🔍<a href="https://t.co/0IiwJtafTq">https://t.co/0IiwJtafTq</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/n946xE4cAS">pic.twitter.com/n946xE4cAS</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1418428040389009410?ref_src=twsrc%5Etfw">July 23, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-24" class="section level2 unnumbered">
+<h2>July 24<a class="anchor" aria-label="anchor" href="#july-24"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Sometimes you may wish to write SQL queries (for practice?) without access to a database. 😩<br><br>In such cases, you can use the {dbwritetable} function from {DBI} 📦 to copy a dataframe to a database table, and then write queries! ✍️🙌<a href="https://t.co/Gu3HwjrR0S">https://t.co/Gu3HwjrR0S</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/z6IZnW0o1o">pic.twitter.com/z6IZnW0o1o</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1418794036840828939?ref_src=twsrc%5Etfw">July 24, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-25" class="section level2 unnumbered">
+<h2>July 25<a class="anchor" aria-label="anchor" href="#july-25"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Simulating parameter draws can sometimes be a (computationally faster) alternative to bootstrapping. ⏲️<br><br>The {simulate_parameters} function from {parameters} 📦 can run and visualize such simulations for various regression models 🎲<a href="https://t.co/SHdA3JANeq">https://t.co/SHdA3JANeq</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/sRe2BhPKjW">pic.twitter.com/sRe2BhPKjW</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1419175619766665217?ref_src=twsrc%5Etfw">July 25, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-26" class="section level2 unnumbered">
+<h2>July 26<a class="anchor" aria-label="anchor" href="#july-26"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+In case you are looking for an alternate, "operator" way to access object attributes in R, you can use the infix attribute accessor (%@%) from {rlang} 📦!️<a href="https://t.co/C0T97lOtWV">https://t.co/C0T97lOtWV</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/zAYw4JCo5i">pic.twitter.com/zAYw4JCo5i</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1419557005769986051?ref_src=twsrc%5Etfw">July 26, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-27" class="section level2 unnumbered">
+<h2>July 27<a class="anchor" aria-label="anchor" href="#july-27"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Sometimes you need to plot data from different geographical entities into a grid and may wish to preserve the original geographical orientation of the entities.<br><br>The {facet_geo} function from {geofacet} 📦 produces such a grid! 🗺️<a href="https://t.co/IUIQ1B7rUw">https://t.co/IUIQ1B7rUw</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/MamwLytO4F">pic.twitter.com/MamwLytO4F</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1419897201908764687?ref_src=twsrc%5Etfw">July 27, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-28" class="section level2 unnumbered">
+<h2>July 28<a class="anchor" aria-label="anchor" href="#july-28"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Operating on multiple columns in a row-wise manner is fairly straightforward in {dplyr} 📦.<br><br>In this workflow, the {c_across} function allows you to use the tidy selection syntax to select columns to operate on 🔍<a href="https://t.co/gmFEid0WDK">https://t.co/gmFEid0WDK</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/8uMiwmcxtq">pic.twitter.com/8uMiwmcxtq</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1420257075012149255?ref_src=twsrc%5Etfw">July 28, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-29" class="section level2 unnumbered">
+<h2>July 29<a class="anchor" aria-label="anchor" href="#july-29"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Either out of curiosity or to improve its performance, sometimes you may want to time your R code.<br><br>The {tic}/{toc} function from {tictoc} 📦 provides just the tool ⏲️<a href="https://t.co/yCu9ArIdBd">https://t.co/yCu9ArIdBd</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/PyHJCSm2NG">pic.twitter.com/PyHJCSm2NG</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1420600490723745798?ref_src=twsrc%5Etfw">July 29, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-30" class="section level2 unnumbered">
+<h2>July 30<a class="anchor" aria-label="anchor" href="#july-30"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+To ensure reproducibility of R script, you may wish it to download needed package versions on a certain date.<br><br>The {groundhog.library} function from {groundhog} 📦 creates a local library with the needed package versions 📑<a href="https://t.co/bOhOXRzfMZ">https://t.co/bOhOXRzfMZ</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/1pLfn8uU4q">pic.twitter.com/1pLfn8uU4q</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1420975283755180037?ref_src=twsrc%5Etfw">July 30, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div id="july-31" class="section level2 unnumbered">
+<h2>July 31<a class="anchor" aria-label="anchor" href="#july-31"><i class="fas fa-link"></i></a>
+</h2>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+ROC curves provide a convenient way to compare responses and predictions of a binomial model.<br><br>The {performance_roc} function from {performance} 📦 computes AUC metric and visualizes ROC curves for a collection of models 🥇🥈🥉<a href="https://t.co/ZKty2kA5Br">https://t.co/ZKty2kA5Br</a><a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://t.co/LYJgfvZHIF">pic.twitter.com/LYJgfvZHIF</a>
+</p>
+— R Function A Day (<span class="citation">@rfunctionaday</span>) <a href="https://twitter.com/rfunctionaday/status/1421342537160200194?ref_src=twsrc%5Etfw">July 31, 2021</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="june-2021.html">June 2021</a></div>
+<div class="next"><a href="august-2021.html">August 2021</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#july-2021">July 2021</a></li>
+<li><a class="nav-link" href="#july-1">July 1</a></li>
+<li><a class="nav-link" href="#july-2">July 2</a></li>
+<li><a class="nav-link" href="#july-3">July 3</a></li>
+<li><a class="nav-link" href="#july-4">July 4</a></li>
+<li><a class="nav-link" href="#july-5">July 5</a></li>
+<li><a class="nav-link" href="#july-6">July 6</a></li>
+<li><a class="nav-link" href="#july-7">July 7</a></li>
+<li><a class="nav-link" href="#july-8">July 8</a></li>
+<li><a class="nav-link" href="#july-9">July 9</a></li>
+<li><a class="nav-link" href="#july-10">July 10</a></li>
+<li><a class="nav-link" href="#july-11">July 11</a></li>
+<li><a class="nav-link" href="#july-12">July 12</a></li>
+<li><a class="nav-link" href="#july-13">July 13</a></li>
+<li><a class="nav-link" href="#july-14">July 14</a></li>
+<li><a class="nav-link" href="#july-15">July 15</a></li>
+<li><a class="nav-link" href="#july-16">July 16</a></li>
+<li><a class="nav-link" href="#july-17">July 17</a></li>
+<li><a class="nav-link" href="#july-18">July 18</a></li>
+<li><a class="nav-link" href="#july-19">July 19</a></li>
+<li><a class="nav-link" href="#july-20">July 20</a></li>
+<li><a class="nav-link" href="#july-21">July 21</a></li>
+<li><a class="nav-link" href="#july-22">July 22</a></li>
+<li><a class="nav-link" href="#july-23">July 23</a></li>
+<li><a class="nav-link" href="#july-24">July 24</a></li>
+<li><a class="nav-link" href="#july-25">July 25</a></li>
+<li><a class="nav-link" href="#july-26">July 26</a></li>
+<li><a class="nav-link" href="#july-27">July 27</a></li>
+<li><a class="nav-link" href="#july-28">July 28</a></li>
+<li><a class="nav-link" href="#july-29">July 29</a></li>
+<li><a class="nav-link" href="#july-30">July 30</a></li>
+<li><a class="nav-link" href="#july-31">July 31</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/IndrajeetPatil/R-Function-A-Day-book//blob/master/July-2021.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/IndrajeetPatil/R-Function-A-Day-book//edit/master/July-2021.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>R Function A Day</strong>" was written by <a class="text-light" href="https://sites.google.com/site/indrajeetspatilmorality/">Indrajeet Patil</a>. It was last built on 2024-12-13.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
