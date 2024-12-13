@@ -45,3 +45,4 @@ _bookdown_files
 _book
 _main.*
 docs
+*.rds
