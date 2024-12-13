@@ -2,6 +2,7 @@ book_filename: "R-Function-A-Day-book"
 new_session: true
 before_chapter_script: _common.R
 delete_merged_file: true
+output_dir: "docs"
 rmd_files:
   [
     "index.Rmd",
