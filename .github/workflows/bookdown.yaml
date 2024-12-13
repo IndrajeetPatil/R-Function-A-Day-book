@@ -58,4 +58,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.7.2
         with:
           branch: gh-pages
-          folder: docs
+          folder: _book
