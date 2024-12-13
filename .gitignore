@@ -40,4 +40,8 @@ vignettes/*.pdf
 
 rsconnect
 .github/.DS_Store
+_bookdown_files
 .DS_Store
+_book
+_main.*
+docs

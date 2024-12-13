@@ -1,3 +1,0 @@
-# Retirement {-}
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today concludes this 1-year hobby project. <br><br>There won’t be new posts, so feel free to unfollow, but do keep revisiting! 🙃<br><br>With &gt; 22K followers in 365 posts, I guess you enjoyed reading them as I much as I’d preparing them. 😅<br><br>Best luck with your jouRneys! 🤞<a href="https://twitter.com/patilindrajeets?ref_src=twsrc%5Etfw">@patilindrajeets</a></p>&mdash; R Function A Day (@rfunctionaday) <a href="https://twitter.com/rfunctionaday/status/1485606987291594762?ref_src=twsrc%5Etfw">January 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
