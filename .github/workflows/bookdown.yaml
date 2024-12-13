@@ -53,4 +53,8 @@ jobs:
           render_book("index.Rmd", output_format = "all", quiet = FALSE)
         shell: Rscript {0}
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Deploy to GitHub pages 🚀
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4.7.2
+        with:
+          branch: gh-pages
