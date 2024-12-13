@@ -38,7 +38,6 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-rsconnect
 .github/.DS_Store
 _bookdown_files
 .DS_Store
